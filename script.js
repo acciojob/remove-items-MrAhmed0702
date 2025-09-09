@@ -3,9 +3,9 @@ const selectElement = document.getElementById("colorSelect");
 const button = document.querySelector('input[type="button"]');
 
 button.addEventListener("click", function () {
-	const selectedIndex = selectElement.selectedIndex;
+	const indexOfOptions = selectElement.selectedIndex;
 
-	if (selectedIndex !== -1) {
-	    selectElement.remove(selectedIndex);
+	if (indexOfOptions !== -1) {
+	    selectElement.remove(indexOfOptions);
     }
 });
